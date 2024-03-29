@@ -1,0 +1,16 @@
+.sign-in-form{
+    width: 400px;
+    padding: 16px;
+}
+
+form{
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+label {
+  margin-bottom: 8px;
+}
+input {
+  margin-bottom: 10px;
+}

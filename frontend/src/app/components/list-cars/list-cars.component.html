@@ -1,0 +1,22 @@
+<h3>Carro</h3>
+<a routerLink="/car/add" routerLinkActive="active" >ADD Car</a>
+<table class="table-config">
+  <tr class="table-title">
+    <th>Ano</th>
+    <th>Placa</th>
+    <th>Modelo</th>
+    <th>Cor</th>
+  </tr>
+  <tr *ngFor="let car of cars" class="table-row">
+    <td>{{car.carYear}}</td>
+    <td>{{car.licensePlate}}</td>
+    <td>{{car.model}}</td>
+    <td>{{car.color}}</td>
+    <td>
+      <button (click)="update(car.id!)">Atualizar</button>
+    </td>
+    <td>
+      <button (click)="delete(car.id!)">Excluir</button>
+    </td>
+  </tr>
+</table>

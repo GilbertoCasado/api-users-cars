@@ -1,0 +1,28 @@
+<a routerLink="/user/add" routerLinkActive="active" >ADD User</a>
+<hr>
+<h3>Usuários</h3>
+<table class="table-config">
+  <tr class="table-title">
+    <th>Nome</th>
+    <th>Sobrenome</th>
+    <th>E-mail</th>
+    <th>Data de Nascimento</th>
+    <th>Login</th>
+    <th>Telefone</th>
+
+  </tr>
+  <tr *ngFor="let user of users" class="table-row">
+    <td>{{user.firstName}}</td>
+    <td>{{user.lastName}}</td>
+    <td>{{user.email}}</td>
+    <td>{{user.birthday}}</td>
+    <td>{{user.login}}</td>
+    <td>{{user.phone}}</td>
+    <td>
+      <button (click)="update(user.id!)">Atualizar</button>
+    </td>
+    <td>
+      <button (click)="delete(user.id!)">Excluir</button>
+    </td>
+  </tr>
+</table>

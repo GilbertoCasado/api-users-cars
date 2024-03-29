@@ -1,0 +1,22 @@
+.table-config{
+  width: 80%;
+}
+
+.table-title {
+  background-color: #f0f0f0;
+  font-weight: bold;
+  padding: 10px;
+}
+
+.table-row:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+.table-row:nth-child(even) {
+  background-color: #ffffff;
+}
+
+.table-title,
+.table-row {
+  margin: 10px;
+}
