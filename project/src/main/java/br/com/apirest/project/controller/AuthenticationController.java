@@ -41,7 +41,7 @@ public class AuthenticationController {
 	}
 	
 	@PostMapping("/token")
-	public ResponseEntity authToken(@RequestBody String data) { 
+	public ResponseEntity<?> authToken(@RequestBody String data) { 
 		String isValidToken =  jtks.validateToken(data);
         return ResponseEntity.ok(isValidToken);
 	}

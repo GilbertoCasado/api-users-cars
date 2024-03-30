@@ -11,7 +11,6 @@ import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 
 import br.com.apirest.project.dto.CarDTO;
-import br.com.apirest.project.dto.UserDTO;
 import br.com.apirest.project.exception.FieldExistException;
 import br.com.apirest.project.handlers.ErrorMessage;
 import br.com.apirest.project.model.Car;
