@@ -9,5 +9,6 @@ import br.com.apirest.project.model.Car;
 public interface CarRepository  extends JpaRepository<Car, Long> {
 	
 	 List<Car> findAllByUserId(Long userId);
-
+	 
+	 Car findByLicensePlate(String licensePlate);
 }
